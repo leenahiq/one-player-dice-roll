@@ -48,6 +48,7 @@ const init = function () {
             `current--${activePlayer}`
           ).textContent = `YOU WON  `;
          currentScore = 0; 
+         init();
        
       } 
       else if(dice == 1){ 
@@ -69,3 +70,5 @@ const init = function () {
       
     }
 });
+btnNew.addEventListener('click', init);
+
